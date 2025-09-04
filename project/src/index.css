@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-3deg); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes rain {
+  0% { transform: translateY(-100vh) rotate(10deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh) rotate(10deg); opacity: 0; }
+}
+
+@keyframes snow {
+  0% { transform: translateY(-100vh) translateX(0px) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh) translateX(100px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes storm-rain {
+  0% { transform: translateY(-100vh) rotate(15deg); opacity: 0; }
+  5% { opacity: 1; }
+  95% { opacity: 1; }
+  100% { transform: translateY(100vh) rotate(15deg); opacity: 0; }
+}
+
+@keyframes lightning {
+  0%, 90%, 100% { opacity: 0; }
+  5%, 10% { opacity: 1; }
+}
+
+@keyframes cloud-drift {
+  0% { transform: translateX(-100px); }
+  100% { transform: translateX(calc(100vw + 100px)); }
+}
+
+@keyframes sun-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+@keyframes sun-rays {
+  0%, 100% { transform: rotate(0deg) scaleY(1); opacity: 0.6; }
+  50% { transform: rotate(5deg) scaleY(1.2); opacity: 1; }
+}
+
+@keyframes wind {
+  0% { transform: translateX(-50px); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(calc(100vw + 50px)); opacity: 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 10s ease-in-out infinite;
+}
+
+.animate-rain {
+  animation: rain linear infinite;
+}
+
+.animate-snow {
+  animation: snow linear infinite;
+}
+
+.animate-storm-rain {
+  animation: storm-rain linear infinite;
+}
+
+.animate-lightning {
+  animation: lightning 4s infinite;
+}
+
+.animate-cloud-drift {
+  animation: cloud-drift linear infinite;
+}
+
+.animate-sun-pulse {
+  animation: sun-pulse 3s ease-in-out infinite;
+}
+
+.animate-sun-rays {
+  animation: sun-rays 2s ease-in-out infinite;
+}
+
+.animate-wind {
+  animation: wind linear infinite;
+}
+
+@keyframes sun-glow {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0.9; }
+}
+
+@keyframes heat-shimmer {
+  0% { transform: translateY(0px) scaleY(1); opacity: 0; }
+  20% { opacity: 0.8; }
+  50% { transform: translateY(-30px) scaleY(1.5); opacity: 0.4; }
+  100% { transform: translateY(-60px) scaleY(0.5); opacity: 0; }
+}
+
+@keyframes mist-float {
+  0% { transform: translateY(100vh) translateX(0px) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.3; }
+  100% { transform: translateY(-20vh) translateX(50px) rotate(180deg); opacity: 0; }
+}
+
+@keyframes cold-breath {
+  0% { transform: translateY(0px) scale(0.5); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { transform: translateY(-40px) scale(1.5); opacity: 0.2; }
+  100% { transform: translateY(-80px) scale(2); opacity: 0; }
+}
+
+@keyframes fog-drift {
+  0% { transform: translateX(-200px) translateY(0px); opacity: 0; }
+  20% { opacity: 0.7; }
+  80% { opacity: 0.4; }
+  100% { transform: translateX(calc(100vw + 200px)) translateY(-20px); opacity: 0; }
+}
+
+@keyframes cloud-movement {
+  0%, 100% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+}
+
+@keyframes particle-float {
+  0% { transform: translateY(0px) translateX(0px) rotate(0deg); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 0.5; }
+  100% { transform: translateY(-100px) translateX(50px) rotate(360deg); opacity: 0; }
+}
+
+.animate-sun-glow {
+  animation: sun-glow 4s ease-in-out infinite;
+}
+
+.animate-heat-shimmer {
+  animation: heat-shimmer linear infinite;
+}
+
+.animate-mist-float {
+  animation: mist-float linear infinite;
+}
+
+.animate-cold-breath {
+  animation: cold-breath ease-out infinite;
+}
+
+.animate-fog-drift {
+  animation: fog-drift linear infinite;
+}
+
+.animate-cloud-movement {
+  animation: cloud-movement 8s ease-in-out infinite;
+}
+
+.animate-particle-float {
+  animation: particle-float linear infinite;
+}
